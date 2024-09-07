@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+        <link rel="stylesheet" href="homePageStyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="databaseConnection" href="dataBase.php">
+    </head>
+    <body>
+        <script type = "text/javascript" src="slides.js"></script>
+
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="#"><img src="images\logo.png" width="75px" height="75px"></a>
+                </div>
+                <ul>
+                    <li><a href="#" class="active">Home Page</a></li>
+                    <li><a href="cookies.html">Cookie Recipes</a></li>
+                    <li><a href="muffins.html">Muffin Recipes</a></li>
+                    <li><a href="cakes.html">Cake Recipes</a></li>
+                </ul>
+            </div>
+
+            <div class="center">
+                <h3>Welcome to</h3>
+                <h2>Piece of Cake Bakery</h2>
+                <div class="divide">
+                    <img src="images/divider1-removebg-preview.png" width="400px" height="30px">
+                </div>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                      <img src="images\appleCrisp\appleCrisp2.jpg" width="640px" height="480px" style="width:fit-content">
+                      <div id="text">Apple Crisp Muffins</div>
+                    </div>
+                  
+                    <div class="mySlides fade">
+                      <img src="images\ginger\ginger1.jpg" width="640px" height="480px" style="width:fit-content">
+                      <div id="text">Gingerbread Snickerdoodles</div>
+                    </div>
+                  
+                    <div class="mySlides fade">
+                      <img src="images\lemonCrinkle\lemonCrinkle4.jpg" width="640px" height="480px" style="width:fit-content">
+                      <div id="text">Lemon Crinkle Cookies</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images\bananaBread\bananaBread3.jpg" width="640px" height="480px" style="width:fit-content">
+                        <div id="text">Banana Loaf Cake</div>
+                      </div>
+                  </div>
+                  <br>
+  
+                  <div style="text-align:center">
+                    <span class="dot" onclick = "currentSlide(1)"></span>
+                    <span class="dot" onclick = "currentSlide(2)"></span>
+                    <span class="dot" onclick = "currentSlide(3)"></span>
+                    <span class="dot" onclick = "currentSlide(4)"></span>
+                  </div>
+            </div>
+        </div>
+
+        <div class="flex-container">
+            <div class="flex-child-about">
+                <h2>About Us</h2>
+                <br>
+                <p>
+                    Piece of Cake Bakery was established in 2023 by Tasneem Aladra. Tasneem is a software engineering student who loves to bake in her free time. 
+                    She decided to make this website to share some of her favorite recipies with those who have a love for baking just like her. 
+                    If you also love to bake and are looking for simple yet absolutely delicious recipies to follow, then you are in the right place. 
+                    The team here at Piece of Cake Bakery is extremely delighted to cater to all your baking needs.
+                </p>   
+            </div>
+            <div class="flex-child-contact">
+                <h2>Contact Us</h2>
+                <br>
+                <p>We'd love to hear from you! For any comments, suggestions or inquires, please reach out to us through any of the methods listed below.</p>
+                <br>
+                <ul>
+                    <li><strong>Email:</strong> pieceofcakebakery@gmail.com</li>
+                    <li><strong>Phone:</strong> 714-932-9736</li>
+                    <li><strong>Social Media:</strong> @pieceofcakebakery</li>
+                    <li><strong>Address:</strong> 10136 Brenna Way, Elk Grove, California 95757</li>
+                </ul>
+            </div>
+            <div class="flex-child-subscribe">
+                <h2>Subscribe to our Newsletter</h2>
+                <br>
+                <p>Want to get new, delectable recipies straight to your inbox? Sign up for our weekly newsletter by filling out the fields below.</p>
+                <br>
+                <form method="post" action="">
+                    <table>
+                        <tr>
+                            <td>First Name: </td>
+                            <td><input type="text" name="fname" id="inpt" required></td>
+                        </tr>
+                        <tr>
+                            <td>Last Name: </td>
+                            <td><input type="text" name="lname" id="inpt" required></td>
+                        </tr>
+                        <tr>
+                            <td>Telephone Number: </td>
+                            <td><input type="tel" name="telno" id="inpt" required></td>
+                        </tr>
+                        <tr>
+                            <td>Email Address:</td>
+                            <td><input type="email" name="email" id="inpt" required></td>
+                        </tr>
+                    </table>
+                    <input type="submit" id="submit" name="submit">
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <h3>Piece of Cake Bakery</h3>
+                <p>Piece of Cake Bakery is a site that caters to all your sweet tooth cravings and baking needs with an extensive collection of dessert recipes. For more content like this, follow us through our social media pages found below.</p>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                </ul>
+                <div class="footer-bottom">
+                    <p> Copyright &copy;2023 <a href="#">pieceofcake</a></p>
+                </div>
+                <div class="footer-menu">
+                    <ul class="f-menu">
+                        <li><a href="#">Home Page</a></li>
+                        <li><a href="cookies.html">Cookies</a></li>
+                        <li><a href="muffins.html">Muffins</a></li>
+                        <li><a href="cakes.html">Cakes</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>
